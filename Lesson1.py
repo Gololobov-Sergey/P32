@@ -1,0 +1,15 @@
+print('Hello', 234, "Python", sep=" -*- ")
+print("Hello \\Python\\")
+print("Hello\nPython")
+print("Hello\t\t\t\tPython")
+print("Hello\bPython")
+print("")
+print(0x25)
+print(0o25)
+print(0b11001)
+print(2.33)
+print(2.33)
+print(True)
+print(False)
+
+
