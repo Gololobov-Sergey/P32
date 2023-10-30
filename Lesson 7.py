@@ -42,12 +42,28 @@ while fn != n:
 print(k)'''
 
 
-n = int(input("n = "))
+'''n = int(input("n = "))
 s = 0
 while n > 0:
     r = n % 10
     s += r
     n //= 10
 
-print(s)
+print(s)'''
 
+
+n = 10000
+k = 0
+while n <= 99999:
+    k5 = 0
+    m = n
+    while m > 0:
+        r = m % 10
+        if r == 5:
+            k5 += 1
+        m //= 10
+    if k5 == 3 and n % 9 == 0:
+        print(n, end=" ")
+        k += 1
+    n += 1
+print(k)
