@@ -27,7 +27,7 @@ for h in range(24):
 print(c)'''
 
 
-for i in range(0, 11):
+'''for i in range(0, 11):
     if i != 0:
         print(f"{i:4}", end='')
     else:
@@ -37,4 +37,29 @@ for i in range(1, 11):
     print(f"{i:4}", end='')
     for j in range(1, 11):
         print(f"{i*j:4}", end='')
-    print()
+    print()'''
+
+'''A = int(input("A = "))
+B = int(input("B = "))
+C = int(input("C = "))
+k = 0
+while A >= C:
+    M = B
+    while M >= C:
+        k += 1
+        M -= C
+    A -= C
+
+print(k)'''
+
+import math
+R = int(input("R = "))
+r = int(input("r = "))
+h = int(input("h = "))
+k = 0
+for x in range(-R, R+1, h):
+    for y in range(-R, R+1, h):
+        l = math.sqrt(x*x + y*y)
+        if l > r and l < R:
+            k+=1
+print(k)

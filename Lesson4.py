@@ -19,7 +19,7 @@ elif b > c:
 else:
     print(c)'''
 
-'''res = 1
+'''res = 0
 if a > 0:
     res += 1
 if b > 0:
