@@ -29,7 +29,7 @@ while a[i] == 0:
     i += 1'''
 
 
-arr = [random.randint(1, 10) for i in range(10)]
+'''arr = [random.randint(1, 10) for i in range(10)]
 print(arr)
 maxValue = arr[0]
 posMax = 0
@@ -39,4 +39,4 @@ for i in range(len(arr)):
         posMax = i
 
 print(maxValue)
-print(posMax)
+print(posMax)'''
