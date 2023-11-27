@@ -34,6 +34,8 @@ n = int(input("n = "))
 arr = [random.randint(1, 50) for i in range(n)]
 print(arr)
 
+
+
 '''k = 0
 for i in range(len(arr)-1):
     if arr[i] > arr[i+1]:
