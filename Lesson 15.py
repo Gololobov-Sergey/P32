@@ -4,7 +4,16 @@ students = [['Student ' + str(i+1)] for i in range(10)]
 for s in students:
     s.append([random.randint(7, 12) for j in range(10)])
 
-#print(students)
+print(students)
+
+'''for i in range(len(students) - 1):
+    for j in range(len(students)-1-i):
+        if sum(students[j][1]) > sum(students[j+1][1]):
+            students[j], students[j+1] = students[j+1], students[j]'''
+
+students.sort(key=lambda l:sum(l[1]))
+
+print(students)
 def best_student(students):
     i = 0
     maxMark = sum(students[0][1])
@@ -15,7 +24,7 @@ def best_student(students):
             i = students.index(s)
     return i
 
-#print(best_student(students))
+print(best_student(students))
 
 def func(a, b=5, c=5):
     print(a+b+c)
@@ -59,7 +68,7 @@ def number1(n):
         number1(n-1)
     print(n, end=' ')
 
-number1(5)
+#number1(5)
 
 
 def sum2(a, b):
@@ -67,4 +76,4 @@ def sum2(a, b):
         return b
     return a + sum2(a+1, b)
 
-print(sum2(3,8))
+#print(sum2(3,8))
